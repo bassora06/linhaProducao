@@ -4,22 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace linhaProducao
 {
     internal class Funcionarios : Conexao
     {
         public int id;
+
         public int id_empresa;
+
         public string nome;
+
         public string email;
+
         private string senha;
+
         private int nivel;
+
         public DateTime data_cadastro;
+
+        public bool logado = false;
 
         public void setSenha(string senha)
         {
-            this.senha = BCrypt.Net.BCrypt.HashPassword(senha, BCrypt.Net.BCrypt.GenerateSalt());
+            //  this.senha = BCrypt.Net.BCrypt.HashPassword(senha, BCrypt.Net.BCrypt.GenerateSalt());
+            this.senha = senha;
         }
 
         public string getSenha()
@@ -83,6 +93,45 @@ namespace linhaProducao
             }
 
             return listaFuncionario;
+        }
+
+        public Funcionarios getFuncionarioPorEmailESenha()
+        {
+            Funcionarios funcionarios = new Funcionarios();
+
+            try
+            {
+                OpenConnection();
+
+                string query = "SELECT * FROM funcionarios where email = '"+ this.email + "' AND senha = '"+ this.senha +"';";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            this.id = Convert.ToInt32( reader.GetString("id"));
+                            this.nome = reader.GetString("nome");
+                            this.email = reader.GetString("email");
+                            this.setNivel(Convert.ToInt16(reader.GetString("nivel")));
+
+                            this.logado = true;
+                        }
+
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return this;
         }
         public bool Inserir()
         {
