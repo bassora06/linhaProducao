@@ -76,7 +76,7 @@ namespace linhaProducao
 
                 Insumos insumos = new Insumos();
 
-                insumos.id_produto = 7;
+                insumos.id_produto = 3;
                 insumos.nome = "farinha";
                 insumos.quantidade = 200;
                 insumos.unidade = "kg";
@@ -99,13 +99,61 @@ namespace linhaProducao
 
                 OrdemProducao OP = new OrdemProducao();
 
-                OP.id_empresa = 7;
+                OP.id_empresa = 3;
                 OP.id_setor = 4;
                 OP.id_cliente = 18;
 
                 OP.Inserir();
 
-                MessageBox.Show("Ordem de produção adicionada  com sucesso");
+                MessageBox.Show("Ordem de produção adicionada com sucesso");
+
+                OrdemProducaoTemProduto OPTP = new OrdemProducaoTemProduto();
+
+                OPTP.id_ordem = 3;
+                OPTP.id_produto = 3;
+                OPTP.quantidade = 1899;
+
+
+                OPTP.Inserir();
+
+                MessageBox.Show("Ordem de produção tem produto adicionada  com sucesso");
+
+
+                Processos processos = new Processos();
+
+                processos.nome = "Derretimento";
+                processos.id_setor = 4;
+
+
+
+                processos.Inserir();
+
+                MessageBox.Show("Processo adicionado com sucesso");
+
+
+                Produtos produtos = new Produtos();
+
+                produtos.nome = "hamburguer";
+                produtos.id_empresa = 4;
+
+
+
+                produtos.Inserir();
+
+                MessageBox.Show("Produto adicionado com sucesso");
+
+
+                Setores setores = new Setores();
+
+                setores.nome = "setor de fundição";
+                setores.id_empresa = 4;
+                setores.id_responsavel = 8;
+
+
+
+                setores.Inserir();
+
+                MessageBox.Show("Setor adicionado com sucesso");
 
 
 
