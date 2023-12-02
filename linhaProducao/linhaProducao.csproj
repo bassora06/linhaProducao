@@ -105,6 +105,24 @@
     <Compile Include="Models\Conexao.cs" />
     <Compile Include="Models\Empresas.cs" />
     <Compile Include="Models\Etapas.cs" />
+    <Compile Include="View\PaginaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaClientes.Designer.cs">
+      <DependentUpon>PaginaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaEtapas.Designer.cs">
+      <DependentUpon>PaginaEtapas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaLinhaProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaLinhaProducao.Designer.cs">
+      <DependentUpon>PaginaLinhaProducao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\PaginaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,11 +145,35 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Setores.cs" />
+    <Compile Include="View\PaginaOrdemProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaOrdemProducao.Designer.cs">
+      <DependentUpon>PaginaOrdemProducao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\PaginaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\PaginaPrincipal.Designer.cs">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaProcessos.Designer.cs">
+      <DependentUpon>PaginaProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaProdutos.Designer.cs">
+      <DependentUpon>PaginaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaSetores.Designer.cs">
+      <DependentUpon>PaginaSetores.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -145,11 +187,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\PaginaClientes.resx">
+      <DependentUpon>PaginaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaEtapas.resx">
+      <DependentUpon>PaginaEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaLinhaProducao.resx">
+      <DependentUpon>PaginaLinhaProducao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\PaginaLogin.resx">
       <DependentUpon>PaginaLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaOrdemProducao.resx">
+      <DependentUpon>PaginaOrdemProducao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\PaginaPrincipal.resx">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaProcessos.resx">
+      <DependentUpon>PaginaProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaProdutos.resx">
+      <DependentUpon>PaginaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaSetores.resx">
+      <DependentUpon>PaginaSetores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -35,8 +35,8 @@ namespace linhaProducao
                             Processos novoProcesso = new Processos();
 
                             novoProcesso.id = Convert.ToInt32(reader.GetString("id"));
+                            novoProcesso.nome = reader.GetString("nome");
                             novoProcesso.id_setor = Convert.ToInt32(reader.GetString("id_setor"));
-                            novoProcesso.nome = reader.GetString("id_empresa");
                             novoProcesso.data_cadastro = DateTime.Parse(reader.GetString("data_cadastro"));
 
 

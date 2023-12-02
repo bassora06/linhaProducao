@@ -37,6 +37,7 @@
             // 
             // TextBoxEmail
             // 
+            this.TextBoxEmail.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.TextBoxEmail.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxEmail.Location = new System.Drawing.Point(12, 97);
             this.TextBoxEmail.Name = "TextBoxEmail";
@@ -57,6 +58,7 @@
             // 
             // TextBoxSenha
             // 
+            this.TextBoxSenha.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.TextBoxSenha.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxSenha.Location = new System.Drawing.Point(12, 159);
             this.TextBoxSenha.Name = "TextBoxSenha";
@@ -66,7 +68,9 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnLogin.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BtnLogin.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.BtnLogin.FlatAppearance.BorderSize = 10;
             this.BtnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.Location = new System.Drawing.Point(12, 230);
             this.BtnLogin.Name = "BtnLogin";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using linhaProducao.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace linhaProducao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaginaLogin());
+            Application.Run(new PaginaPrincipal());
         }
     }
 }

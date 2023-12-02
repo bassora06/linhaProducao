@@ -16,7 +16,7 @@ namespace linhaProducao
         public DateTime data_cadastro;
 
 
-        public List<Setores> GetListaProdutos()
+        public List<Setores> GetListaSetores()
         {
             List<Setores> ListaSetores = new List<Setores>();
 
@@ -24,7 +24,7 @@ namespace linhaProducao
             {
                 OpenConnection();
 
-                string query = "SELECT * FROM setor;";
+                string query = "SELECT * FROM setores;";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {
