@@ -58,5 +58,12 @@ namespace linhaProducao.View
         {
 
         }
+
+        private void btnCadastrarEtapa_Click(object sender, EventArgs e)
+        {
+            PaginaNovaEtapa form = new PaginaNovaEtapa();
+
+            form.ShowDialog();
+        }
     }
 }

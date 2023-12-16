@@ -56,6 +56,7 @@
             this.btnCadastrarSetor.TabIndex = 2;
             this.btnCadastrarSetor.Text = "Cadastrar setor";
             this.btnCadastrarSetor.UseVisualStyleBackColor = false;
+            this.btnCadastrarSetor.Click += new System.EventHandler(this.btnCadastrarSetor_Click);
             // 
             // PaginaSetores
             // 

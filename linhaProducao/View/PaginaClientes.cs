@@ -33,7 +33,9 @@ namespace linhaProducao.View
                 listViewClientes.Columns.Add("#", -2, HorizontalAlignment.Left);
                 listViewClientes.Columns.Add("ID", -2, HorizontalAlignment.Left);
                 listViewClientes.Columns.Add("NOME", -2, HorizontalAlignment.Left);
-                listViewClientes.Columns.Add("EMAIL ", -2, HorizontalAlignment.Center);
+                listViewClientes.Columns.Add("EMAIL", -2, HorizontalAlignment.Center);
+                listViewClientes.Columns.Add("TELEFONE", -2, HorizontalAlignment.Center);
+                listViewClientes.Columns.Add("DOCUMENTO", -2, HorizontalAlignment.Center);
 
                 foreach (Clientes cliente in clientes.GetListaClientes())
                 {
@@ -43,6 +45,8 @@ namespace linhaProducao.View
                     item.SubItems.Add(cliente.id.ToString());
                     item.SubItems.Add(cliente.nome);
                     item.SubItems.Add(cliente.email);
+                    item.SubItems.Add(cliente.telefone);
+                    item.SubItems.Add(cliente.getDocumento());
                     listViewClientes.Items.Add(item);
                 }
 
@@ -62,6 +66,13 @@ namespace linhaProducao.View
         private void listViewClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           PaginaNovoCadastro form = new PaginaNovoCadastro();
+
+           form.ShowDialog();
         }
     }
 }

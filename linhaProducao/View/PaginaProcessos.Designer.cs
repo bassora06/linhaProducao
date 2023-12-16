@@ -56,6 +56,7 @@
             this.btnCadastrarProcesso.TabIndex = 2;
             this.btnCadastrarProcesso.Text = "Cadastrar processo";
             this.btnCadastrarProcesso.UseVisualStyleBackColor = false;
+            this.btnCadastrarProcesso.Click += new System.EventHandler(this.btnCadastrarProcesso_Click);
             // 
             // PaginaProcessos
             // 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panelConteudo = new System.Windows.Forms.Panel();
-            this.listViewClientes = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
+            this.listViewClientes = new System.Windows.Forms.ListView();
             this.panelConteudo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,16 +44,6 @@
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(800, 450);
             this.panelConteudo.TabIndex = 3;
-            // 
-            // listViewClientes
-            // 
-            this.listViewClientes.HideSelection = false;
-            this.listViewClientes.Location = new System.Drawing.Point(0, 0);
-            this.listViewClientes.Name = "listViewClientes";
-            this.listViewClientes.Size = new System.Drawing.Size(799, 449);
-            this.listViewClientes.TabIndex = 0;
-            this.listViewClientes.UseCompatibleStateImageBehavior = false;
-            this.listViewClientes.SelectedIndexChanged += new System.EventHandler(this.listViewClientes_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -69,6 +59,18 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Cadastrar cliente";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listViewClientes
+            // 
+            this.listViewClientes.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.listViewClientes.HideSelection = false;
+            this.listViewClientes.Location = new System.Drawing.Point(0, 0);
+            this.listViewClientes.Name = "listViewClientes";
+            this.listViewClientes.Size = new System.Drawing.Size(799, 449);
+            this.listViewClientes.TabIndex = 0;
+            this.listViewClientes.UseCompatibleStateImageBehavior = false;
+            this.listViewClientes.SelectedIndexChanged += new System.EventHandler(this.listViewClientes_SelectedIndexChanged);
             // 
             // PaginaClientes
             // 

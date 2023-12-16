@@ -56,5 +56,12 @@ namespace linhaProducao.View
         {
 
         }
+
+        private void btnCadastrarSetor_Click(object sender, EventArgs e)
+        {
+            PaginaNovoSetor form = new PaginaNovoSetor();
+
+            form.ShowDialog();
+        }
     }
 }

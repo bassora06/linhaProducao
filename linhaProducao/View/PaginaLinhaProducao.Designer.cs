@@ -56,6 +56,7 @@
             this.btnCadastrarLinhaProducao.TabIndex = 2;
             this.btnCadastrarLinhaProducao.Text = "Cadastrar linha de produção";
             this.btnCadastrarLinhaProducao.UseVisualStyleBackColor = false;
+            this.btnCadastrarLinhaProducao.Click += new System.EventHandler(this.btnCadastrarLinhaProducao_Click);
             // 
             // PaginaLinhaProducao
             // 

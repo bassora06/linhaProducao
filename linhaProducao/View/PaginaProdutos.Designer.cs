@@ -56,6 +56,7 @@
             this.btnCadastrarProduto.TabIndex = 2;
             this.btnCadastrarProduto.Text = "Cadastrar produto";
             this.btnCadastrarProduto.UseVisualStyleBackColor = false;
+            this.btnCadastrarProduto.Click += new System.EventHandler(this.btnCadastrarProduto_Click);
             // 
             // PaginaProdutos
             // 

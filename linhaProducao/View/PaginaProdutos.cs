@@ -57,5 +57,12 @@ namespace linhaProducao.View
         {
 
         }
+
+        private void btnCadastrarProduto_Click(object sender, EventArgs e)
+        {
+            PaginaNovoProduto form = new PaginaNovoProduto();
+
+            form.ShowDialog();
+        }
     }
 }

@@ -56,5 +56,12 @@ namespace linhaProducao.View
         {
 
         }
+
+        private void btnCadastrarProcesso_Click(object sender, EventArgs e)
+        {
+            PaginaNovoProcesso form = new PaginaNovoProcesso();
+
+            form.ShowDialog();
+        }
     }
 }

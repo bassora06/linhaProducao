@@ -56,6 +56,7 @@
             this.btnCadastrarEtapa.TabIndex = 2;
             this.btnCadastrarEtapa.Text = "Cadastrar etapa";
             this.btnCadastrarEtapa.UseVisualStyleBackColor = false;
+            this.btnCadastrarEtapa.Click += new System.EventHandler(this.btnCadastrarEtapa_Click);
             // 
             // PaginaEtapas
             // 

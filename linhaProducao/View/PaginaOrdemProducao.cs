@@ -54,5 +54,12 @@ namespace linhaProducao.View
         {
 
         }
+
+        private void btnCadastrarOrdemProducao_Click(object sender, EventArgs e)
+        {
+            PaginaNovaOrdemProducao form = new PaginaNovaOrdemProducao();
+
+            form.ShowDialog();
+        }
     }
 }

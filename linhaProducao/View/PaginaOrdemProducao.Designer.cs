@@ -56,6 +56,7 @@
             this.btnCadastrarOrdemProducao.TabIndex = 2;
             this.btnCadastrarOrdemProducao.Text = "Cadastrar ordem produção";
             this.btnCadastrarOrdemProducao.UseVisualStyleBackColor = false;
+            this.btnCadastrarOrdemProducao.Click += new System.EventHandler(this.btnCadastrarOrdemProducao_Click);
             // 
             // PaginaOrdemProducao
             // 
